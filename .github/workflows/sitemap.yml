@@ -1,28 +1,4 @@
-name: Generate xml sitemap
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  sitemap_job:
-    runs-on: ubuntu-latest
-    name: Generate a sitemap
-    steps:
-      - name: Checkout the repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Generate the sitemap
-        id: sitemap
-        uses: cicirello/generate-sitemap@v1
-        with:
-          base-url-path: # Replace with your website's URL
-      - name: Commit and push
-        # This step is needed to push the changes back to the repo
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'k.mitra.kaustav@gmail.com'
-          git add sitemap.xml
-          git commit -m "Automated sitemap update" || echo "No changes to commit"
-          git push
+name: Generate the sitemap
+uses: cicirello/generate-sitemap@v1
+with:
+  base-url-path: https://mitrakaustav.github.io/

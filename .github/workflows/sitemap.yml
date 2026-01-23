@@ -17,7 +17,7 @@ jobs:
         id: sitemap
         uses: cicirello/generate-sitemap@v1
         with:
-          https://mitrakaustav.github.io # Replace with your website's URL
+          base-url-path: # Replace with your website's URL
       - name: Commit and push
         # This step is needed to push the changes back to the repo
         run: |

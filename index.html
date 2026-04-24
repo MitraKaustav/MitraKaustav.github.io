@@ -22,12 +22,14 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<script type="text/x-mathjax-config">
-		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+		<script>
+		MathJax = {
+		tex: {
+			inlineMath: [['$', '$'], ['\\(', '\\)']]
+		}
+		};
 		</script>
-		<script type="text/javascript"
-		src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-		</script>
+		<script src="https://jsdelivr.net"></script>
 	</head>
 	<body class="is-preload">
 		<!-- Google Tag Manager (noscript) -->
@@ -109,7 +111,7 @@
 									<div class="col-6 col-12-medium col-24-small">
 										<p>
 											I am leading the DESI Y3 full-scale joint analysis of clustering and g-g lensing,
-											with the goal to precisely constrain cosmological parameters $$\Omega_m$$ and $$S_8$$
+											with the goal to precisely constrain cosmological parameters $\Omega_m$ and $S_8$
 											by extracting small-scale information from the data,
 											while marginalizing over the uncertainties in the galaxy-halo connection.
 										</p>

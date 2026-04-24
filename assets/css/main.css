@@ -72,6 +72,17 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* href links */
+
+a {
+	color: blue;            /* Set your desired link color */
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline; /* Optional: underline on hover for usability */
+}
+
 /* Row */
 
 	.row {

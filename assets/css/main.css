@@ -1795,12 +1795,12 @@ a:hover {
 			line-height: 0.9em;
 			font-size: 2.5em;
 			margin: 0 0.25em 0 0.25em;
-			opacity: 0.35;
+			opacity: 0.60;
 			outline: 0;
-			-moz-transition: opacity .25s ease-in-out;
-			-webkit-transition: opacity .25s ease-in-out;
-			-ms-transition: opacity .25s ease-in-out;
-			transition: opacity .25s ease-in-out;
+			-moz-transition: opacity .35s ease-in-out;
+			-webkit-transition: opacity .35s ease-in-out;
+			-ms-transition: opacity .35s ease-in-out;
+			transition: opacity .35s ease-in-out;
 		}
 
 			#nav a.icon:before {
